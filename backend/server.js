@@ -17,7 +17,7 @@ app.use(cors());
 app.use('/posts',postRoutes);
 app.use('/users',userRoutes);
 
-const MONGO_URI='mongodb+srv://kaushal_hissaria:Accenture@12345@pvtcluster.t0v7x.mongodb.net/toDoList?retryWrites=true&w=majority'
+const MONGO_URI=YOUR_MONGO_URI
 const PORT = process.env.PORT||5000;
 
 mongoose.connect(MONGO_URI,
